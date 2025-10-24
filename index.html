@@ -19,15 +19,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <style>
-        body {
+   <style>
+        /* New CSS for a perfect full-screen iframe */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents the outer page from scrolling */
             font-family: 'Sarabun', sans-serif;
         }
-        /* Style for the iframe to ensure it covers the full viewport */
+
         #mainIframe {
             width: 100%;
-            height: 100vh;
-            display: block; /* Ensures no extra space around it */
+            height: 100%; /* Fills the body, which is 100% height */
+            display: block;
+            border: none; /* Removes any default iframe border */
         }
     </style>
 
